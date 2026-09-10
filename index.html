@@ -28,6 +28,7 @@
     <nav id="nav">
       <a href="#home">Home</a>
       <a href="#about">About Us</a>
+      <a href="#video">Video</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
       <a href="#product-rumah">Product Rumah</a>
@@ -91,10 +92,26 @@
         <div><b>Selangor</b><span>Service Area</span></div>
         <div><b>1 Team</b><span>Project Coordination</span></div>
       </div>
-    
+      <p class="small">*Display CIDB grade only after confirming the current registration details.</p>
     </div>
     <div class="about-card">
-      <img src="hawa-gold-logo.jpg" alt="Hawa Gold logo">
+      <div class="seal">
+        <svg class="seal-ring" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="94" fill="none" stroke="url(#sealGrad)" stroke-width="1.5"/>
+          <circle cx="100" cy="100" r="86" fill="none" stroke="url(#sealGrad)" stroke-width="1"/>
+          <path id="sealTextPath" d="M 100,14 A 86,86 0 1 1 99.9,14" fill="none"/>
+          <text font-size="9.2" letter-spacing="3" fill="#f2d078" font-family="Montserrat, Arial, sans-serif" font-weight="700">
+            <textPath href="#sealTextPath" startOffset="2%">HAWA GOLD CONSTRUCTION &amp; SERVICES • EST. IN SELANGOR •</textPath>
+          </text>
+          <defs>
+            <linearGradient id="sealGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f2d078"/>
+              <stop offset="1" stop-color="#d8ad4b"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <img class="seal-logo" src="hawa-gold-icon.jpg" alt="Hawa Gold logo">
+      </div>
       <div>
         <h3>Our Commitment</h3>
         <p>“Build properly. Communicate clearly. Deliver professionally.”</p>
@@ -110,6 +127,32 @@
     <p class="section-lead">How our team is structured to manage and deliver your project.</p>
     <div class="org-frame">
       <img src="organization.jpeg" alt="Hawa Gold Construction organization chart">
+    </div>
+  </div>
+</section>
+
+<section id="video" class="section dark">
+  <div class="container">
+    <p class="eyebrow">SEE US IN ACTION</p>
+    <h2>Company Video</h2>
+    <p class="section-lead">A short look at how Hawa Gold plans, manages and delivers a project on site.</p>
+    <div class="video-frame">
+      <!-- YouTube embed (recommended) — replace VIDEO_ID with your own unlisted YouTube video ID -->
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="Hawa Gold Construction & Services company video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
+      <!-- Self-hosted alternative (only use if your file is small, e.g. under 20-30MB) —
+           delete the <iframe> above and uncomment this block instead:
+      <video controls playsinline poster="video-poster.jpg">
+        <source src="company-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      -->
     </div>
   </div>
 </section>
@@ -218,7 +261,8 @@
       <div>
         <p><strong>Hawa Gold Construction & Services</strong></p>
         <p>No. 43, Jalan Kemuning 2,<br>Taman Kemuning,<br>42700 Banting, Selangor</p>
-        <p><strong>WhatsApp / Phone</strong><br><a href="https://wa.me/60173394771?text=Hi%20saya%20berminat%20untuk%20buat%20rumah%20%2F%20renovation%20.%20Boleh%20tak%20buat%20appoinment%20atau%20pertanyaan%20.Terima%20Kasih">017-339 4771</a></p>
+        <p><strong>WhatsApp / Phone</strong><br><a href="tel:+60173394771">017-339 4771</a></p>
+        <p><strong>Office Line (Call Only)</strong><br><a href="tel:+60XXXXXXXXX">0XX-XXX XXXX</a></p>
         <p><strong>Business Registration</strong><br>202603209273 (NS0326274-U)</p>
       </div>
       <form id="contactForm" class="contact-form">
@@ -243,7 +287,7 @@
   </div>
 </footer>
 
-<a class="floating-wa" href="https://wa.me/60173394771?text=Hi%20saya%20berminat%20untuk%20buat%20rumah%20%2F%20renovation%20.%20Boleh%20tak%20buat%20appoinment%20atau%20pertanyaan%20.Terima%20Kasih" target="_blank" aria-label="WhatsApp Hawa Gold">WA</a>
+<a class="floating-wa" href="https://wa.me/60173394771" target="_blank" aria-label="WhatsApp Hawa Gold">WA</a>
 <script src="script.js"></script>
 </body>
 </html>
